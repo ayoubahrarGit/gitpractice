@@ -9,5 +9,6 @@ export class AppComponent {
   title = 'myapp';
   constructor(){
     console.info('debug breakpoint');
+    console.log('debug breakpoint - FEATURE1 UPDATE')
   }
 }
