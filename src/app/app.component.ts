@@ -10,6 +10,7 @@ export class AppComponent {
   constructor(){
     console.info('debug breakpoint');
     console.info('debug breakpoint remote update');
+    console.info('debug breakpoint - master update');
     console.log('debug breakpoint - FEATURE1 UPDATE')
     console.info('debug breakpoint - UPDATE FEATURE2');
   }
