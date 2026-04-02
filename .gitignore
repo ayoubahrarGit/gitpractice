@@ -1,0 +1,20 @@
+# Maven build output
+target/
+
+# SQLite database file (runtime artifact)
+*.db
+
+# IDE files
+.idea/
+*.iml
+.eclipse/
+.settings/
+.project
+.classpath
+*.class
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
