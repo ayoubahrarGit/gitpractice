@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.stockmanager.controller.LoginController"
+      alignment="CENTER"
+      spacing="16"
+      style="-fx-background-color: #f4f6f8; -fx-padding: 40;">
+
+    <Label text="Gestion de Stock"
+           style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;"/>
+
+    <Label text="Connexion"
+           style="-fx-font-size: 14px; -fx-text-fill: #7f8c8d;"/>
+
+    <GridPane hgap="10" vgap="12" alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints minWidth="120" halignment="RIGHT"/>
+            <ColumnConstraints minWidth="200"/>
+        </columnConstraints>
+
+        <Label text="Identifiant :" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <TextField fx:id="usernameField" promptText="Identifiant"
+                   GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+        <Label text="Mot de passe :" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <PasswordField fx:id="passwordField" promptText="Mot de passe"
+                       GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+    </GridPane>
+
+    <Label fx:id="errorLabel" text=""
+           style="-fx-text-fill: #e74c3c; -fx-font-size: 12px;"/>
+
+    <Button text="Se connecter" onAction="#handleLogin"
+            defaultButton="true"
+            style="-fx-background-color: #2980b9; -fx-text-fill: white;
+                   -fx-font-size: 14px; -fx-padding: 8 24 8 24; -fx-cursor: hand;"/>
+
+    <Label text="Comptes par défaut : admin/admin123 · user/user123"
+           style="-fx-font-size: 11px; -fx-text-fill: #95a5a6;"/>
+</VBox>
